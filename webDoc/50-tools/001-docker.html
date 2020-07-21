@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>001-docker相关 | Tracer的博客</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/img/logo.gif">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Tracer Blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/assets/css/0.styles.9778bb33.css" as="style"><link rel="preload" href="/assets/js/app.e2eb2984.js" as="script"><link rel="preload" href="/assets/js/2.5b6550c1.js" as="script"><link rel="preload" href="/assets/js/3.46c87e14.js" as="script"><link rel="preload" href="/assets/js/5.0a448c8c.js" as="script"><link rel="prefetch" href="/assets/js/10.3766d178.js"><link rel="prefetch" href="/assets/js/11.cc192412.js"><link rel="prefetch" href="/assets/js/12.574b973e.js"><link rel="prefetch" href="/assets/js/13.d815cfba.js"><link rel="prefetch" href="/assets/js/14.2fd90e11.js"><link rel="prefetch" href="/assets/js/15.ca2da1de.js"><link rel="prefetch" href="/assets/js/16.b162b643.js"><link rel="prefetch" href="/assets/js/17.2ce33cf6.js"><link rel="prefetch" href="/assets/js/18.6dd22f25.js"><link rel="prefetch" href="/assets/js/19.850ecd36.js"><link rel="prefetch" href="/assets/js/20.9f1a50fa.js"><link rel="prefetch" href="/assets/js/4.56d3ef15.js"><link rel="prefetch" href="/assets/js/6.7507f62f.js"><link rel="prefetch" href="/assets/js/7.3afd735b.js"><link rel="prefetch" href="/assets/js/8.7de16033.js"><link rel="prefetch" href="/assets/js/9.63604f57.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9778bb33.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.gif" alt="Tracer的博客" class="logo"> <span class="site-name can-hide">Tracer的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/webDoc/" class="nav-link router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="http://47.97.201.34:8081/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Jenkins
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://47.97.201.34:8880/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitlab
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友链" class="dropdown-title"><span class="title">友链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://www.inode.club" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  程序员指北 koala
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://ruizhengyun.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  编程之上
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://47.98.159.95/my_blog/nav/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  三元前端知识系统
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.lxchuan12.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  若川
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  山月
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/webDoc/" class="nav-link router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="http://47.97.201.34:8081/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Jenkins
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://47.97.201.34:8880/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitlab
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友链" class="dropdown-title"><span class="title">友链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://www.inode.club" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  程序员指北 koala
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://ruizhengyun.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  编程之上
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://47.98.159.95/my_blog/nav/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  三元前端知识系统
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.lxchuan12.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  若川
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://shanyue.tech/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  山月
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/webDoc/" class="sidebar-link">目录</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>环境工具</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webDoc/50-tools/001-docker.html" class="active sidebar-link">001-docker相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webDoc/50-tools/001-docker.html#一-docker-常用命令" class="sidebar-link">一.docker 常用命令</a></li><li class="sidebar-sub-header"><a href="/webDoc/50-tools/001-docker.html#二-安装docker" class="sidebar-link">二.安装docker</a></li><li class="sidebar-sub-header"><a href="/webDoc/50-tools/001-docker.html#三-docker安装gitlab" class="sidebar-link">三.docker安装gitlab</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webDoc/50-tools/001-docker.html#gitlab备份与恢复" class="sidebar-link">gitlab备份与恢复</a></li></ul></li><li class="sidebar-sub-header"><a href="/webDoc/50-tools/001-docker.html#四-docker安装jenkins" class="sidebar-link">四.docker安装jenkins</a></li></ul></li><li><a href="/webDoc/50-tools/002-nginx.html" class="sidebar-link">002-nginx相关</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试集锦</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>源码学习</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_001-docker相关"><a href="#_001-docker相关" class="header-anchor">#</a> 001-docker相关</h1> <h2 id="一-docker-常用命令"><a href="#一-docker-常用命令" class="header-anchor">#</a> 一.docker 常用命令</h2> <h4 id="容器生命周期管理"><a href="#容器生命周期管理" class="header-anchor">#</a> 容器生命周期管理</h4> <div class="language- extra-class"><pre class="language-text"><code>docker run //创建一个新的容器并运行一个命令
+</code></pre></div><h4 id="容器操作"><a href="#容器操作" class="header-anchor">#</a> 容器操作</h4> <div class="language- extra-class"><pre class="language-text"><code>进入容器
+docker attach//突出容器会导致容器停止
+docker exec //退出容器终端，不会导致容器停止
+
+导出容器
+docker export 1e560fca3906 &gt; ubuntu.tar
+导入容器快照
+cat docker/ubuntu.tar | docker import - test/ubuntu:v1
+docker import http://example.com/exampleimage.tgz example/imagerepo
+</code></pre></div><h4 id="镜像操作"><a href="#镜像操作" class="header-anchor">#</a> 镜像操作</h4> <div class="language- extra-class"><pre class="language-text"><code>docker pull ubuntu:13.10 //拉取镜像
+</code></pre></div><h2 id="二-安装docker"><a href="#二-安装docker" class="header-anchor">#</a> 二.安装docker</h2> <h4 id="先配置yum源"><a href="#先配置yum源" class="header-anchor">#</a> 先配置yum源</h4> <div class="language- extra-class"><pre class="language-text"><code>yum repolist
+</code></pre></div><h4 id="选用阿里源安装docker"><a href="#选用阿里源安装docker" class="header-anchor">#</a> 选用阿里源安装docker</h4> <div class="language- extra-class"><pre class="language-text"><code># step 1: 安装必要的一些系统工具
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+ 
+# Step 2: 添加软件源信息
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+ 
+# Step 3: 更新并安装Docker-CE
+sudo yum makecache fast
+sudo yum -y install docker-ce
+ 
+# Step 4: 开启Docker服务
+sudo service docker start
+</code></pre></div><h4 id="安装完成后输入docker-version查看docker是否安装成功"><a href="#安装完成后输入docker-version查看docker是否安装成功" class="header-anchor">#</a> 安装完成后输入docker version查看docker是否安装成功</h4> <h4 id="docker加速器配置"><a href="#docker加速器配置" class="header-anchor">#</a> Docker加速器配置</h4> <p>配置docker加速器，将会提升在国内获取docker官方镜像的速度，否则后面会很慢。在阿里云控制台中查看自己的镜像加速器地址，我的地是<code>https://scq88k25.mirror.aliyuncs.com</code></p> <p>使用配置文件<code>/etc/docker/daemon.json配置镜像加速器</code>。</p> <p>系统没有时新建该文件，在daemon.json中添加加速地址</p> <div class="language- extra-class"><pre class="language-text"><code>{
+        d
+}
+</code></pre></div><p>重启docker daemon</p> <div class="language- extra-class"><pre class="language-text"><code>sudo systemctl daemon-reload//守护进程重启
+sudo systemctl restart docker//重启docker服务
+</code></pre></div><h2 id="三-docker安装gitlab"><a href="#三-docker安装gitlab" class="header-anchor">#</a> 三.docker安装gitlab</h2> <h4 id="下载镜像"><a href="#下载镜像" class="header-anchor">#</a> 下载镜像</h4> <div class="language- extra-class"><pre class="language-text"><code># 不加 tag 则默认为最新版本 latest
+$ docker pull gitlab/gitlab-ce
+</code></pre></div><p><code>创建目录</code>：通常会将Gitlab的配置（config）/日志（log）/数据（data）放到容器之外，便于日后升级，因此先准备这三个目录</p> <div class="language- extra-class"><pre class="language-text"><code>mkdir -p /srv/gitlab/config
+mkdir -p /srv/gitlab/logs 
+mkdir -p /srv/gitlab/data
+</code></pre></div><p>启动运行</p> <div class="language- extra-class"><pre class="language-text"><code>$ docker run --detach \
+  --hostname gitlab \
+  --publish 8443:443 --publish 8880:80 --publish 8222:22 \
+  --name gitlab \
+  --restart always \
+  --volume /srv/gitlab/config:/etc/gitlab \
+  --volume /srv/gitlab/logs:/var/log/gitlab \
+  --volume /srv/gitlab/data:/var/opt/gitlab \
+  --privileged=true \
+  gitlab/gitlab-ce:latest
+</code></pre></div><p>说明：</p> <ul><li><p>--hostname gitlab.zcj.com: 设置主机名或域名</p></li> <li><p>--publish 8443:443：将http：443映射到外部端口8443</p></li> <li><p>--publish 8880:80：将web：80映射到外部端口8880</p></li> <li><p>--publish 8222:22：将ssh：22映射到外部端口8222</p></li> <li><p>--name gitlab: 运行容器名</p></li> <li><p>--restart always: 自动重启</p></li> <li><p>--volume /srv/gitlab/config:/etc/gitlab: 挂载目录</p></li> <li><p>--volume /srv/gitlab/logs:/var/log/gitlab: 挂载目录</p></li> <li><p>--volume /srv/gitlab/data:/var/opt/gitlab: 挂载目录</p></li> <li><p>--privileged=true 使得容器内的root拥有真正的root权限。否则，container内的root只是外部的一个普通用户权限</p> <p>运行成功后，查看容器运行的状态</p> <div class="language- extra-class"><pre class="language-text"><code>docker ps
+</code></pre></div></li></ul> <p>访问：gitlab启动成功后，浏览器访问http://ip:8880, 即可访问。</p> <p>在运行gitlab后，报了一个这样的错误</p> <p><img src="/assets/img/gitlab-02.0b9cb3dd.png" alt="image-20200131145844848"></p> <p>解决办法如下</p> <div class="language- extra-class"><pre class="language-text"><code>vi  /usr/lib/sysctl.d/00-system.conf
+</code></pre></div><p>添加如下代码：</p> <p><img src="/assets/img/gitlab-01.e72aa83f.png" alt="image-20200131150004902"></p> <p>重启网络服务后，删除错误的容器，再次创建新容器。</p> <h4 id="配置域名访问"><a href="#配置域名访问" class="header-anchor">#</a> 配置域名访问</h4> <p>为了使用域名访问，需要配置nginx:</p> <div class="language- extra-class"><pre class="language-text"><code>vi /srv/gitlab/data/nginx/conf/nginx.conf 
+</code></pre></div><p>配置如下：</p> <div class="language- extra-class"><pre class="language-text"><code>upstream gitlab{
+        server 127.0.0.1:8880;
+  }
+
+  server {
+        listen 80;
+        server_name gitlab.zcj.com;
+        access_log /var/log/nginx/gitlab.zcj.com-access.log;
+        error_log /var/log/nginx/gitlab.zcj.com-error.log;
+        location / {
+                proxy_pass_header Server;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Scheme $scheme;
+                proxy_pass http://gitlab;
+        }
+  }
+</code></pre></div><p>重启nginx配置，但是还是无法生效，待跟踪</p> <h4 id="配置邮件服务器"><a href="#配置邮件服务器" class="header-anchor">#</a> 配置邮件服务器</h4> <p>打开qq邮箱，开启IMAP/SMTP服务，根据文档获取授权码，然后跳转至挂载目录 <code>/srv/gitlab/config/</code> 编辑<code>gitlab.rb</code> 文件，找到 Email Settings的注释位置，然后修改以下内容：</p> <div class="language- extra-class"><pre class="language-text"><code>### Email Settings
+gitlab_rails['smtp_enabled'] = true //开启smtp功能
+gitlab_rails['smtp_address'] = 'smtp.qq.com'
+gitlab_rails['smtp_port'] = 465
+gitlab_rails['smtp_user_name'] = '1451182750@qq.com' //你的邮箱账号
+gitlab_rails['smtp_password'] = 'bfuxzwnfkfzrjhfa'//授权码
+gitlab_rails['smtp_authentication'] = 'login'
+gitlab_rails['smtp_enable_starttls_auto'] = true
+gitlab_rails['smtp_tls'] = true
+gitlab_rails['gitlab_email_from'] = '1451182750@qq.com'//发件人信息
+gitlab_rails['smtp_domain'] = 'qq.com'
+</code></pre></div><p>配置保持成功，输入以下命令使配置生效</p> <div class="language- extra-class"><pre class="language-text"><code>sudo docker exec gitlab gitlab-ctl reconfigure
+</code></pre></div><p>使配置生效之后我们可以使用 gitlab 自带的工具进行一下测试。依次执行下面的命令：</p> <div class="language- extra-class"><pre class="language-text"><code># 开启 gitlab 的 bash 工具
+$ docker exec -it gitlab bash
+
+# 开启 gitlab-rails 工具
+$ gitlab-rails console production
+
+# 发送邮件进行测试
+Notify.test_email('test_001@123.com', 'Message Subject', 'Message Body').deliver_now
+</code></pre></div><p>测试完成之后退出gitlab的bash工具，重启 gitlab 即可</p> <h3 id="gitlab备份与恢复"><a href="#gitlab备份与恢复" class="header-anchor">#</a> gitlab备份与恢复</h3> <p>根据上面的命令安装gitlab,做了文件卷的映射，把容器内的容器映射到容器外，在主机/srv文件夹下</p> <h4 id="第一步备份gitlab文件"><a href="#第一步备份gitlab文件" class="header-anchor">#</a> 第一步备份gitlab文件</h4> <div class="language- extra-class"><pre class="language-text"><code>tar -zcvf gitlab2020.tar.gz /srv
+将gitlab2020.tar.gz文件下载到本地
+</code></pre></div><h4 id="第二步备份gitlab容器，整体打包成镜像文件"><a href="#第二步备份gitlab容器，整体打包成镜像文件" class="header-anchor">#</a> 第二步备份gitlab容器，整体打包成镜像文件</h4> <div class="language- extra-class"><pre class="language-text"><code>1）docker ps//查看容器id
+2）docker commit -a 'zhangchongju' -m 'gitlab2020备份' containerId zhangchongju/gitlab:1.0
+-a 作者
+-m 提交的描述信息
+containerId 容器id
+zhangchongju/gitlab:1.0 镜像名称：版本号
+
+3）查看镜像，有刚才备份的镜像
+docker images
+
+4)将镜像文件备份成.tar.gz文件，也可以直接将镜像文件push到阿里云
+docker save imageId &gt; ./gitlab20200415.tar.gz
+</code></pre></div><p>4.1)将镜像push到阿里云镜像仓库
+若没有创建过镜像仓库，要先创建一个镜像仓库，并设置仓库密码</p> <p><img src="/assets/img/docker.c5aac84f.png" alt="img"></p> <p>4.1.1 将镜像发布到阿里云仓库</p> <div class="language-$xslt extra-class"><pre class="language-text"><code>将镜像推送到Registry
+$ sudo docker login --username=xxx registry.cn-beijing.aliyuncs.com
+$ sudo docker tag [ImageId] registry.cn-beijing.aliyuncs.com/wangmin/repository:[镜像版本号]
+$ sudo docker push registry.cn-beijing.aliyuncs.com/wangmin/repository:[镜像版本号]
+</code></pre></div><h4 id="gitlab恢复"><a href="#gitlab恢复" class="header-anchor">#</a> gitlab恢复</h4> <h5 id="_1-srv目录恢复"><a href="#_1-srv目录恢复" class="header-anchor">#</a> 1.srv目录恢复</h5> <p>将gitlab2020.tar.gz文件解压</p> <div class="language- extra-class"><pre class="language-text"><code>mv gitlab2020.tar.gz /
+tar -zxf gitlab2020.tar.gz
+</code></pre></div><p>在根目录下查看，有/srv目录
+由于docker容器内部访问宿主机的文件，并不是root用户创建的，没有root权限，需要给文件添加权限</p> <div class="language- extra-class"><pre class="language-text"><code>chmod -R 777 srv 给srv文件夹下面的所有文件添加读写可执行权限
+</code></pre></div><h5 id="_2-启动gitlab备份的镜像文件"><a href="#_2-启动gitlab备份的镜像文件" class="header-anchor">#</a> 2.启动gitlab备份的镜像文件</h5> <p>若是.tar.gz文件，先将该文件加载成镜像文件
+docker load &lt; ./gitlab2020-image.tar.gz</p> <p>重新执行容器启动命令</p> <div class="language- extra-class"><pre class="language-text"><code>$ docker run --detach \
+  --hostname gitlab \
+  --publish 8443:443 --publish 8880:80 --publish 8222:22 \
+  --name gitlab \
+  --restart always \
+  --volume /srv/gitlab/config:/etc/gitlab \
+  --volume /srv/gitlab/logs:/var/log/gitlab \
+  --volume /srv/gitlab/data:/var/opt/gitlab \
+  --privileged=true \
+  ca7e810526e4
+</code></pre></div><h2 id="四-docker安装jenkins"><a href="#四-docker安装jenkins" class="header-anchor">#</a> 四.docker安装jenkins</h2> <div class="language- extra-class"><pre class="language-text"><code>拉取docker镜像
+docker pull jenkins/jenkins:lts
+docker images
+docker inspect imageId //查看是否最新版本
+mkdir /home/jenkins_home
+docker run -d --name jenkins -p 8081:8080 -v /srv/jenkins:/srv/jenkins jenkins/jenkins:lts
+//d:后台运行(守护进程)
+//-p: 8081:8080 是制定对外暴露的端口，容器内部用8080对应外部的8081
+//-v /srv/jenkins:/src/jenkins是将jenkins挂载到jenkins下面，方便看，并且空间也大
+//安装成功后，访问ip+端口(8081)
+</code></pre></div><p>访问后，需要管理员的密钥，需要进入到容器中去查找</p> <div class="language- extra-class"><pre class="language-text"><code>查看当前正在运行的容器(docker ps)
+docker -exec -it b83ba79f922c /bin/bash
+cat /var/jenkins/secrets/initialAdminPassword
+</code></pre></div><p>输入密码后，有推荐安装和自定义安装插件，新手使用推荐安装的方式</p> <p>插件安装完成后，会自动进入用户注册界面</p> <p>点击用户设置---配置管理员密码</p> <h4 id="jenkins-系统配置"><a href="#jenkins-系统配置" class="header-anchor">#</a> jenkins-系统配置</h4> <p>安装好gitlab相关的插件</p> <p>在gitlab上生成access Token，进入jenkins-&gt;凭据，添加相应的token</p> <p><img src="/assets/img/jenkins-05.665be910.png" alt="image-20200327121749944"></p> <p>进入jenkins-&gt;系统管理-&gt;系统配置-&gt;gitlab配置项</p> <p><img src="/assets/img/jenkins-04.4b39b913.png" alt="image-20200327120757984"></p> <p>//连接服务器，进入jenkins容器，生成公钥ssh-keygen -t rsa</p> <p>在gitlab上配置jenkins的项目工程相关信息</p> <p><img src="/assets/img/jenkins-03.3a577fb0.png" alt="image-20200327205158393"></p> <p>url和secret Token都在jenkins上生成</p> <p><img src="/assets/img/jenkins-02.7ff485a6.png" alt="image-20200327205412871"></p> <h4 id="jenkins的基本功能"><a href="#jenkins的基本功能" class="header-anchor">#</a> jenkins的基本功能</h4> <p><img src="/assets/img/jenkins.3a7c3b33.png" alt="img"></p> <p><img src="/assets/img/jenkins-01.6baabbf6.png" alt="image-20200325210420378"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webDoc/30-javaScript/002.html" class="prev">
+        异步请求方式总结
+      </a></span> <span class="next"><a href="/webDoc/50-tools/002-nginx.html">
+        002-nginx相关
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.e2eb2984.js" defer></script><script src="/assets/js/2.5b6550c1.js" defer></script><script src="/assets/js/3.46c87e14.js" defer></script><script src="/assets/js/5.0a448c8c.js" defer></script>
+  </body>
+</html>
